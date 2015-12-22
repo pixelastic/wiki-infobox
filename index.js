@@ -48,7 +48,7 @@ var WikiInfobox = function(page, language, cb) {
     // mustache brackets (I don't know proper English word for this),
     // unlimited number of spaces and 'infobox' label (can also start with
     // uppercase char).
-    var startingPointRegex = /\{\{\s*[Ii]nfobox/;
+    var startingPointRegex = /\{\{\s*(Infobox|Superherobox)/i;
 
     // What is the position of the string we are looking for
     // in the whole document?
